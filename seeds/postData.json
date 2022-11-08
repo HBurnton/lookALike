@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Tim looks like this rock",
+    "body": "I found this rock and thought hey, this looks like my friend tim",
+    "numberAgree": 4,
+    "numberDisagree": 3,
+    "imageOneUrl": "https://placekitten.com/640/360",
+    "imageTwoUrl": "https://placebeard.it/640x360"
+  },
+  {
+    "title": "Bob looks like this fish",
+    "body": "I found this fish and thought hey, this looks like my friend bob",
+    "imageOneUrl": "https://placekitten.com/640/360",
+    "imageTwoUrl": "https://placebeard.it/640x360"
+  },
+  {
+    "title": "John looks like this rock",
+    "body": "I found this rock and thought hey, this looks like my friend Bill",
+    "numberAgree": 6,
+    "numberDisagree": 3,
+    "imageOneUrl": "https://placekitten.com/640/360",
+    "imageTwoUrl": "https://placebeard.it/640x360"
+  }
+]
