@@ -4,6 +4,7 @@ const routes = require("./controllers");
 require("dotenv").config();
 const session = require("express-session");
 const sequelize = require("./config/connection");
+const exphbs = require("express-handlebars");
 
 const app = express();
 
@@ -14,6 +15,11 @@ const sess = {
 };
 
 app.use(session(sess));
+
+const hbs = exphbs.create({});
+
+app.engine("handlebars", hbs.engine);
+app.set("view engine", "handlebars");
 
 const PORT = process.env.PORT || 3001;
 
