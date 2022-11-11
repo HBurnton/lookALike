@@ -40,7 +40,8 @@ router.get("/posts/:id", async (req, res) => {
         },
       ],
     });
-    res.json(post);
+
+    res.render("fullviewpost", {post});
   } catch (err) {
     res.json(err);
   }
