@@ -11,7 +11,9 @@ router.get("/", async (req, res) => {
         },
       ],
     });
+    console.log(allPosts);
     const posts = allPosts.map((post) => post.get({ plain: true }));
+    console.log(posts);
     res.render("homepage", { posts });
   } catch (err) {
     res.status(500).json(err);
