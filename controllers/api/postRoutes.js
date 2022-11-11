@@ -22,7 +22,7 @@ router.put("/agree/:id", async (req, res) => {
   try {
     const post = await Post.findByPk(req.params.id);
     let updatedPost = await post.increment("numberAgree");
-    updatedPost = await Post.findByPk(req.params.id);
+    await updatedPost.reload();
     res.json(updatedPost);
   } catch (err) {
     res.json(err);
@@ -33,7 +33,7 @@ router.put("/disagree/:id", async (req, res) => {
   try {
     const post = await Post.findByPk(req.params.id);
     let updatedPost = await post.increment("numberDisagree");
-    updatedPost = await Post.findByPk(req.params.id);
+    await updatedPost.reload();
     res.json(updatedPost);
   } catch (err) {
     res.json(err);
