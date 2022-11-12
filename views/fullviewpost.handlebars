@@ -1,29 +1,27 @@
-<section class="container d-flex justify-content-center">
+<section class="col-lg-12">
       
-<div class="card" style="width:400px">
 
-  
-  <div class="card-body">
-    <h4># {{id}}</h4>
-    <h4 class="card-title">{{title}}</h4>
-    <h4>This looks like this!</h4>
-    <img src="{{imageOneUrl}}" />
-     <img src="{{imageTwoUrl}}" />
-    <p class="card-text">{{body}}</p>
+
+    <h2 class="text-center fs-2 fw-bold">{{title}}</h2>
+    <div class="row">
+      <img src="{{imageOneUrl}}" class='col-lg-6'/>
+      <img src="{{imageTwoUrl}}" class='col-lg-6'/>
+    </div>
+    <div class="row mt-2">
+      <div class='col-lg-6'>
+        <div class="text-center bg-success rounded">Agree: {{numberAgree}}</div>
+      </div>
+      <div class='col-lg-6'>
+        <div class="text-center bg-danger rounded">Disagree: {{numberDisagree}}</div>
+      </div>
+    <p>{{body}}</p>
     <p>Submitted by: {{user.name}}</p>
-    <p>Agree:{{numberAgree}}</p>
-    <p>Disagree:{{numberDisagree}}</p>
+
+    </ul>
     
   
-  </div>
 </section>
 
-
-
-
-
-
-</div>
 
 
 
