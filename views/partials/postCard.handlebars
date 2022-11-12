@@ -1,15 +1,17 @@
-
 <div class="col-lg-4 col-md-6 col-sm-12">
   <div class="card p-2">
-    <div class="card-body">
+    <article class="card-body">
       <h4 class="card-title mb-2 text-center">{{title}}</h4>
-      <img src="{{imageOneUrl}}" class="img-fluid rounded"/>
-        <div class='row p-1'>
-        <span class="col-md-6 text-center bg-success text-white">{{numberAgree}} Agree</span><span class="col-md-6 text-center bg-danger">{{numberDisagree}} Disagree</span>
-        </div>
-        <div class="row p-1">
+      <img src="{{imageOneUrl}}" class="img-fluid rounded" />
+      <div class="row p-1">
+        <span class="col-md-6 text-center bg-success text-white">{{numberAgree}}
+          Agree</span>
+        <span class="col-md-6 text-center bg-danger">{{numberDisagree}}
+          Disagree</span>
+      </div>
+      <div class="row p-1">
         <a href="/posts/{{id}}" class="btn btn-primary">View Full Post</a>
-        </div>
-    </div>
+      </div>
+    </article>
   </div>
 </div>

@@ -1,24 +1,38 @@
 [
   {
-    "title": "Tim looks like this rock",
-    "body": "I found this rock and thought hey, this looks like my friend tim",
+    "title": "This sewage cover looks like a pineapple",
+    "body": "I found this while walking down the street and was shocked to see this",
     "numberAgree": 4,
     "numberDisagree": 3,
-    "imageOneUrl": "https://placekitten.com/640/360",
-    "imageTwoUrl": "https://placebeard.it/640x360"
+    "imageOneUrl": "https://i.redd.it/c5f416xnk6u91.jpg",
+    "imageTwoUrl": "https://m.media-amazon.com/images/I/71+qAJehpkL._SX679_.jpg"
   },
   {
-    "title": "Bob looks like this fish",
-    "body": "I found this fish and thought hey, this looks like my friend bob",
-    "imageOneUrl": "https://placekitten.com/640/360",
-    "imageTwoUrl": "https://placebeard.it/640x360"
+    "title": "This Onion looks like a laughing baby",
+    "body": "Just cut this onion and found this adorable guy in there",
+    "imageOneUrl": "https://i.redd.it/0sg0cenn3az91.jpg",
+    "imageTwoUrl": "https://assets.babycenter.com/ims/2015/12/iStock_8178591_wide.jpg?width=850"
   },
   {
-    "title": "John looks like this rock",
-    "body": "I found this rock and thought hey, this looks like my friend Bill",
+    "title": "This Clam shell looks like a sloth",
+    "body": "Eating Clams and I saw this bad boi",
     "numberAgree": 6,
     "numberDisagree": 3,
-    "imageOneUrl": "https://placekitten.com/640/360",
-    "imageTwoUrl": "https://placebeard.it/640x360"
+    "imageOneUrl": "https://i.redd.it/4ljzbp5kviz91.jpg",
+    "imageTwoUrl": "https://previews.123rf.com/images/janossygergely/janossygergely1501/janossygergely150100013/35577251-happy-sloth.jpg"
+  },
+  {
+    "title": "This Ivy Covered Pole Looks Like The Swamp Thing",
+    "body": "I found this formidable looking pole while walking around downtown LA",
+    "numberAgree": 5,
+    "numberDisagree": 3,
+    "imageOneUrl": "https://i.redd.it/2tgep9f69bz91.jpg",
+    "imageTwoUrl": "https://www.denofgeek.com/wp-content/uploads/2019/08/swamp-thing-episode-10-review-loose-ends-series-finale-dc-universe.jpg"
+  },
+  {
+    "title": "This Onion looks like a laughing baby",
+    "body": "Just cut this onion and found this adorable guy in there",
+    "imageOneUrl": "https://i.redd.it/0sg0cenn3az91.jpg",
+    "imageTwoUrl": "https://assets.babycenter.com/ims/2015/12/iStock_8178591_wide.jpg?width=850"
   }
 ]

@@ -1,11 +1,12 @@
-<section class="col-lg-12">
-      
-
-
+<section class="col-lg-12 mt-3">
     <h2 class="text-center fs-2 fw-bold">{{title}}</h2>
-    <div class="row">
-      <img src="{{imageOneUrl}}" class='col-lg-6'/>
-      <img src="{{imageTwoUrl}}" class='col-lg-6'/>
+    <div class="row align-items-center">
+      <div class='col-lg-6'>
+      <img src="{{imageOneUrl}}" class="img-fluid"/>
+      </div>
+      <div class='col-lg-6'>
+        <img src="{{imageTwoUrl}}" class="img-fluid"/>
+      </div>
     </div>
     <div class="row mt-2">
       <div class='col-lg-6'>
@@ -16,8 +17,13 @@
       </div>
     <p>{{body}}</p>
     <p>Submitted by: {{user.name}}</p>
-
     </ul>
+
+    <p>What do you think?</p>
+    <div class="btn-group btn-group-lg" role="group" aria-label="Basic mixed styles example">
+      <button type="button" class="btn bg-success">It Does!</button>
+      <button type="button" class="btn btn-danger">It Doesn't</button>
+    </div>
     
   
 </section>
