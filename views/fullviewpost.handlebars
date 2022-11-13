@@ -2,31 +2,37 @@
     <h2 class="text-center fs-2 fw-bold">{{title}}</h2>
     <div class="row align-items-center">
       <div class='col-lg-6'>
-      <img src="{{imageOneUrl}}" class="img-fluid"/>
+      <img src="{{newpost.imageOneUrl}}" class="img-fluid"/>
       </div>
       <div class='col-lg-6'>
-        <img src="{{imageTwoUrl}}" class="img-fluid"/>
+        <img src="{{newpost.imageTwoUrl}}" class="img-fluid"/>
       </div>
     </div>
     <div class="row mt-2">
       <div class='col-lg-6'>
-        <div class="text-center bg-success rounded">Agree: {{numberAgree}}</div>
+        <div class="text-center bg-success rounded">Agree: {{newpost.numberAgree}}</div>
       </div>
       <div class='col-lg-6'>
-        <div class="text-center bg-danger rounded">Disagree: {{numberDisagree}}</div>
+        <div class="text-center bg-danger rounded">Disagree: {{newpost.numberDisagree}}</div>
       </div>
-    <p>{{body}}</p>
-    <p>Submitted by: {{user.name}}</p>
+    <p>{{newpost.body}}</p>
+    <p>Submitted by: {{newpost.user.name}}</p>
     </ul>
 
     <p>What do you think?</p>
+    {{#if loggedIn}}     
     <div class="btn-group btn-group-lg" role="group" aria-label="Basic mixed styles example">
       <button type="button" class="btn bg-success" id="yesButton">It Does!</button>
       <button type="button" class="btn btn-danger" id="noButton">It Doesn't</button>
     </div>
-    
-  
+    {{else}}
+    <div>
+      <p>Please Log In To Vote</p>
+    </div>
+    {{/if}}
 </section>
+
+<script src="../../js/login.js"></script>
 
 
 
