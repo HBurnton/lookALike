@@ -2,6 +2,7 @@ const router = require("express").Router();
 const { User, Post } = require("../models");
 
 router.get("/", async (req, res) => {
+  console.log(req.session.loggedIn);
   try {
     const allPosts = await Post.findAll({
       include: [
@@ -11,10 +12,9 @@ router.get("/", async (req, res) => {
         },
       ],
     });
-    console.log(allPosts);
     const posts = allPosts.map((post) => post.get({ plain: true }));
-    console.log(posts);
-    res.render("homepage", { posts });
+    console.log(req.session.loggedIn);
+    res.render("homepage", { posts, loggedIn: req.session.loggedIn });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -31,7 +31,7 @@ router.get("/users/", async (req, res) => {
 });
 
 router.get("/login/", async (req, res) => {
-    res.render("login");
+  res.render("login");
 });
 
 router.get("/submit/", async (req, res) => {
