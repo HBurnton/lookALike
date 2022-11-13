@@ -18,5 +18,10 @@
     "name": "Harrison",
     "email": "hb@test.com",
     "password": "hunter2"
+  },
+  {
+    "name": "Harrison",
+    "email": "hb@test.com",
+    "password": "hunter2"
   }
 ]
