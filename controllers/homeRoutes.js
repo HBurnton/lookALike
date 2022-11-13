@@ -30,6 +30,14 @@ router.get("/users/", async (req, res) => {
   }
 });
 
+router.get("/login/", async (req, res) => {
+    res.render("login");
+});
+
+router.get("/submit/", async (req, res) => {
+  res.render("submit");
+});
+
 router.get("/posts/:id", async (req, res) => {
   try {
     const post = await Post.findByPk(req.params.id, {
