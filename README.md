@@ -41,7 +41,7 @@ Users can log in via the log in. Once logged in they are able to navigate to a n
 ## Credits
 
 - [Will Vining](https://github.com/awvining91) - Handlebars.js, CSS, Pull Request Approver Extraordinaire
-- [Harrison Burnton](https://github.com/HBurnton/) - Models, Controllers, Handlebars.js, Frontend Javascript, Heroku and Github, Presentation Deck
+- [Harrison Burnton](https://github.com/HBurnton/) - Models, Controllers (Routes), Handlebars.js, Frontend Javascript, Heroku and Github, Presentation Deck, Readme
 - [Caleb Hernandez](https://github.com/Caleb775) - Form contribution, User Story
 - [Hezron Teklu](https://github.com/hezron123) - Acceptance Criteria
 
