@@ -47,4 +47,12 @@ router.get("/posts/:id", async (req, res) => {
   }
 });
 
+router.get("/submit", async (req, res) => {
+  try {
+    res.render("submit", { loggedIn: req.session.loggedIn });
+  } catch (err) {
+    res.json(err);
+  }
+});
+
 module.exports = router;
