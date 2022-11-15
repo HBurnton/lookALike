@@ -6,6 +6,7 @@ const createNewUser = async (event) => {
   const password = document.querySelector("#userPassword").value.trim();
 
   if (name && email && password) {
+    console.log("hello");
     const response = await fetch("/api/users/", {
       method: "POST",
       body: JSON.stringify({
