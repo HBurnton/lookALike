@@ -8,7 +8,9 @@ const agree = async (event) => {
     headers: { "Content-Type": "application/json" },
   });
 
-  currentAgree.innerText = parseInt(currentAgree.innerText) + 1;
+  const response2 = await response.json();
+
+  currentAgree.innerText = response2.numberAgree;
 };
 
 const disagree = async (event) => {
@@ -21,7 +23,10 @@ const disagree = async (event) => {
     headers: { "Content-Type": "application/json" },
   });
 
-  currentDisagree.innerText = parseInt(currentDisagree.innerText) + 1;
+  const response2 = await response.json();
+  response2.numberDisagree;
+
+  currentDisagree.innerText = response2.numberDisagree;
 };
 
 document.querySelector("#yesButton").addEventListener("click", agree);
