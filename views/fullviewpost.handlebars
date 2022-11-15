@@ -1,4 +1,4 @@
-<section class="col-lg-12 mt-3">
+<section class="col-lg-12 mt-3" data-postid="{{newpost.id}}">
     <h2 class="text-center fs-2 fw-bold">{{title}}</h2>
     <div class="row align-items-center">
       <div class='col-lg-6'>
@@ -10,10 +10,10 @@
     </div>
     <div class="row mt-2">
       <div class='col-lg-6'>
-        <div class="text-center bg-success rounded">Agree: {{newpost.numberAgree}}</div>
+        <div class="text-center bg-success rounded">Agree: <span id="numberAgree">{{newpost.numberAgree}}</span></div>
       </div>
       <div class='col-lg-6'>
-        <div class="text-center bg-danger rounded">Disagree: {{newpost.numberDisagree}}</div>
+        <div class="text-center bg-danger rounded">Disagree: <span id="numberDisagree">{{newpost.numberDisagree}}</span></div>
       </div>
     <p>{{newpost.body}}</p>
     <p>Submitted by: {{newpost.user.name}}</p>
@@ -33,6 +33,7 @@
 </section>
 
 <script src="../../js/login.js"></script>
+<script src="../../js/fullpost.js"></script>
 
 
 
