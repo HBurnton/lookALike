@@ -2,7 +2,6 @@ const router = require("express").Router();
 const { User, Post } = require("../models");
 
 router.get("/", async (req, res) => {
-  console.log(req.session.loggedIn);
   try {
     const allPosts = await Post.findAll({
       include: [
@@ -13,7 +12,10 @@ router.get("/", async (req, res) => {
       ],
     });
     const posts = allPosts.map((post) => post.get({ plain: true }));
-    console.log(req.session.loggedIn);
+    posts.sort((a,b)=>{
+      return b.createdAt - a.createdAt ||
+      b.title.localeCompare(a.title);
+    })
     res.render("homepage", { posts, loggedIn: req.session.loggedIn });
   } catch (err) {
     res.status(500).json(err);
