@@ -27,6 +27,8 @@ Users can log in via the log in. Once logged in they are able to navigate to a n
 
 ![Homepage](assets/img/homepage.jpg)
 
+[Live Link of App](https://dashboard.heroku.com/apps/afternoon-peak-71885)
+
 ## Technologies Used
 
 - Express.js
